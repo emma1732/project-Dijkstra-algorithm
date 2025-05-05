@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-
+/*
     Graph* test_1 = new Graph;
 
     // Test add_node and add_edge
@@ -20,7 +20,7 @@ int main() {
     Edge* C_to_D = add_edge(test_1, "C", "D", 1, 0);
     Edge* D_to_B = add_edge(test_1, "D", "B", 5, 0);
     Edge* D_to_B_duplicate = add_edge(test_1, "D", "B", 5, 0);   // Duplicates are not allowed
-/*
+
     cout << "*** Test add_node and add_edge ***" << endl;
     print_graph(test_1);
 
@@ -43,13 +43,13 @@ int main() {
 
     cout << "*** Test remove_node and remove_edge ***" << endl;
     print_graph(test_1);
-*/    
+    
     // Test Dijkstra_shortest_time with start location A
     Dijkstra_shortest_time(test_1, "A");
 
     cout << "*** Test Dijkstra_shortest_time with start location A ***" << endl;
     print_graph(test_1);
-/*
+
     Graph* test_2 = new Graph;
 
     Edge* E_to_F = add_edge(test_2, "E", "F", 0, 4);
@@ -85,5 +85,22 @@ int main() {
     cout << "*** Test find_lowest_cost with start location N and end location P ***" << endl;
     cout << find_lowest_cost(test_3, "N", "P") << endl;
 */
+    Graph* test_4 = new Graph;
+
+    Edge* GR_to_SE = add_edge(test_4, "Grand Rapids", "Seattle", 7.5, 176);
+    Edge* GR_to_DE = add_edge(test_4, "Grand Rapids", "Detroit", 1, 149);
+    Edge* GR_to_LA = add_edge(test_4, "Grand Rapids", "Los Angeles", 6.5, 176);
+    Edge* SE_to_SH = add_edge(test_4, "Seattle", "Shanghai", 13, 960);
+    Edge* DE_to_SH = add_edge(test_4, "Detroit", "Shanghai", 15, 1685);
+    Edge* LA_to_BJ = add_edge(test_4, "Los Angeles", "Beijing", 14, 1169);
+    Edge* SH_to_SY = add_edge(test_4, "Shanghai", "Shenyang", 2.5, 203);
+    Edge* BJ_to_SY = add_edge(test_4, "Beijing", "Shenyang", 3.5, 75);
+
+    // Find the path with the shortest time from Grand Rapids to Shenyang
+    cout << find_shortest_time(test_4, "Grand Rapids", "Shenyang") << endl;
+
+    // Find the path with the lowest cost from Grand Rapids to Shenyang
+    cout << find_lowest_cost(test_4, "Grand Rapids", "Shenyang") << endl;
+
     return 0;
 }
