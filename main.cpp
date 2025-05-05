@@ -1,9 +1,9 @@
-#include "../code/Graph.cpp"
+#include "Graph.cpp"
 
 using namespace std;
 
 int main() {
-/*
+
     Graph* test_1 = new Graph;
 
     // Test add_node and add_edge
@@ -20,7 +20,7 @@ int main() {
     Edge* C_to_D = add_edge(test_1, "C", "D", 1, 0);
     Edge* D_to_B = add_edge(test_1, "D", "B", 5, 0);
     Edge* D_to_B_duplicate = add_edge(test_1, "D", "B", 5, 0);   // Duplicates are not allowed
-
+/*
     cout << "*** Test add_node and add_edge ***" << endl;
     print_graph(test_1);
 
@@ -43,13 +43,13 @@ int main() {
 
     cout << "*** Test remove_node and remove_edge ***" << endl;
     print_graph(test_1);
-    
+*/    
     // Test Dijkstra_shortest_time with start location A
     Dijkstra_shortest_time(test_1, "A");
 
     cout << "*** Test Dijkstra_shortest_time with start location A ***" << endl;
     print_graph(test_1);
-
+/*
     Graph* test_2 = new Graph;
 
     Edge* E_to_F = add_edge(test_2, "E", "F", 0, 4);
@@ -67,7 +67,7 @@ int main() {
 
     cout << "*** Test Dijkstra_lowest_cost with start location E ***" << endl;
     print_graph(test_2);
-*/
+
     Graph* test_3 = new Graph;
 
     Edge* L_to_M = add_edge(test_3, "L", "M", 9, 9);
@@ -84,6 +84,6 @@ int main() {
     // Test find_lowest_cost with start location N and end location P
     cout << "*** Test find_lowest_cost with start location N and end location P ***" << endl;
     cout << find_lowest_cost(test_3, "N", "P") << endl;
-    
+*/
     return 0;
 }
