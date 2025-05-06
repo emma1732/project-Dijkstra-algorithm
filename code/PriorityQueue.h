@@ -66,7 +66,7 @@ void enqueue_node(pqueue*& queue, Node* node);
 Node* dequeue_node(pqueue*& queue);
 
 // reorder_node percolates the Node up to the proper position in the min-heap 
-// after its distance/priority being replaced with a smaller value.
+// after its distance/priority is replaced with a smaller value.
 void reorder_node(pqueue*& queue, Node* node);
 
 #endif
