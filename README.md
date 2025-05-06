@@ -62,9 +62,9 @@ void reorder_node(pqueue*& queue, Node* node) {
 ## How the project is tested
 To ensure my program is running properly, I used four tests. All four graphs used in the tests can be found in the tests folder. The first three graphs are from the zyBooks section 16.9. The distance and predecessor data of each Node after running Dijkstra's algorithm are provided in these graphs, which can be compared against the data output by the print_graph() function. The fourth graph is self-designed based on some information crudely gathered online. It is included to show how the project works. Each test has a .cpp file in the tests folder which can be compiled with g++ -o <target_name> <file_name> and run with ./<target_name>.
 ## How the project is used
--To build a graph, use the add_edge() function.
--To find the fastest path, use the find_shortest_time() function.
--To find the cheapest path, use the find_lowest cost() function.
+- To build a graph, use the add_edge() function.
+- To find the fastest path, use the find_shortest_time() function.
+- To find the cheapest path, use the find_lowest cost() function.
 Below are their function declarations.
 ```
 // add_edge returns a new Edge created and added to the graph 
